@@ -28,7 +28,7 @@ object UserHolder {
         }
 
     fun requestAccessCode(phone: String) {
-        if (!map.containsKey(phone)) map[phone]?.updateAccessCode()
+        if (map.containsKey(phone)) map[phone]?.updateAccessCode()
     }
 
     @VisibleForTesting(otherwise = VisibleForTesting.NONE)
