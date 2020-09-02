@@ -180,8 +180,9 @@ class ExampleUnitTest {
         """.trimIndent()
 
         val successResult =  holder.loginUser("+7 (917) 971-11-11", user.accessCode!!)
-
         Assert.assertNotEquals(oldAccess, user.accessCode!!)
+        println(user.accessCode)
+        println(successResult)
         Assert.assertEquals(expectedInfo, successResult)
     }
 }
