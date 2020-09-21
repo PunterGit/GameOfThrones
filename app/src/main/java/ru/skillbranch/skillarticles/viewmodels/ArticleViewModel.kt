@@ -121,7 +121,6 @@ class ArticleViewModel(
         val msg = "Share is not implemented"
         notify(Notify.ErrorMessage(msg,"OK",null))
 
-
     }
 
     override fun handleToggleMenu() {
